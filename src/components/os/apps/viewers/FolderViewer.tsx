@@ -28,7 +28,6 @@ export default function FolderViewer({ title }: FolderViewerProps) {
                 <div className="bg-os-panel border border-os-border rounded p-3 shadow-sm mb-4">
                     <h3 className="font-bold flex justify-between items-center text-os-panel-text mb-2 pb-2 border-b border-os-border">
                         {title}
-                        <span>^</span>
                     </h3>
                     <p className="text-os-text/80 text-xs leading-relaxed">
                         {t('folder_viewer.about_text')}
@@ -38,7 +37,6 @@ export default function FolderViewer({ title }: FolderViewerProps) {
                 <div className="bg-os-panel border border-os-border rounded p-3 shadow-sm">
                     <h3 className="font-bold flex justify-between items-center text-os-panel-text mb-2 pb-2 border-b border-os-border">
                         {t('folder_viewer.disclaimer_title')}
-                        <span>^</span>
                     </h3>
                     <p className="text-os-text/80 text-xs leading-relaxed">
                         {t('folder_viewer.disclaimer_text')}

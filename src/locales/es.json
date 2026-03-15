@@ -55,9 +55,9 @@
         "archive_info": "Los archivos nunca se borrarán permanentemente gracias a Internet Archive.",
         "recent": "Recientemente eliminados ({count})",
         "archived": "Archivo (no se pueden recuperar) ({count})",
-        "file_quickcalls": "guion de llamadas.txt",
+        "file_quickcalls": "protocolo_aviar.txt",
         "folder_employee": "Pruebas de que la Tierra es PLANA",
-        "video_spicy": "picante.mov",
+        "video_spicy": "video_prohibido_2025.mp4",
         "error_title": "No se puede abrir este archivo",
         "error_desc": "La aplicación asociada con este tipo de archivo no pudo ser encontrada o el archivo está corrupto."
     },
@@ -273,5 +273,13 @@
     "readme_viewer": {
         "error_title": "Error",
         "error_loading": "No se pudo cargar el archivo."
+    },
+    "text_viewer": {
+        "p1": "Acabas de desenterrar un pequeño archivo clasificado en el sistema. Hablemos del mayor malentendido de la historia: los dinosaurios nunca se extinguieron por completo.",
+        "p2": "Es cierto que hace unos 66 millones de años un asteroide gigante cambió las reglas del juego. Sin embargo, un grupo muy específico y adaptable de dinosaurios terópodos (sí, la misma rama evolutiva a la que pertenecían el temible T-Rex y el ágil Velociraptor) logró sobrevivir al apocalipsis.",
+        "p3": "A lo largo de millones de años, estos supervivientes perfeccionaron su hardware. Redujeron drásticamente su tamaño para optimizar el consumo de energía, actualizaron sus pesadas escamas por plumas aerodinámicas y reemplazaron sus enormes mandíbulas dentadas por picos de queratina ultra ligeros.",
+        "p4": "Desde el punto de vista biológico y taxonómico, las aves no solo descienden de los reptiles prehistóricos; son dinosaurios modernos (dinosaurios avianos, para ser exactos). Han estado entre nosotros todo este tiempo, dominando los cielos y, ocasionalmente, nuestros hogares.",
+        "p5": "Así que piénsalo: cada vez que Impa y Vaati se ponen a cantar a todo pulmón, exigen tu atención, o te miran con esa actitud desafiante, no son simples mascotas. Son dos pequeños y orgullosos dinosaurios reclamando su dominio territorial.",
+        "p6": "Gracias por explorar los directorios ocultos de J.OS. El sistema ha registrado exitosamente tu nivel de curiosidad. Puedes cerrar este archivo cuando estés listo para volver a la interfaz principal."
     }
 }

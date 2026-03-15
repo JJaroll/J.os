@@ -1,12 +1,12 @@
-# Portfolio Web System OS - Clon Web
+# J.OS - Web Portfolio System
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.2.3-blue?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Version](https://img.shields.io/badge/Version-0.1.0-orange?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.0.0-green?style=for-the-badge)
 
-Este es un proyecto de portafolio web interactivo construido con [Next.js](https://nextjs.org/), simulando un sistema operativo completo dentro del navegador (System OS). Permite a los usuarios explorar proyectos, habilidades y disfrutar de varios minijuegos clásicos adaptados tanto para escritorio como para dispositivos móviles.
+Este es un proyecto de portafolio web interactivo construido con [Next.js](https://nextjs.org/), simulando un sistema operativo completo dentro del navegador (**J.OS**). Permite a los usuarios explorar proyectos, habilidades y disfrutar de varios minijuegos clásicos adaptados tanto para escritorio como para dispositivos móviles.
 
 ## Características Principales
 

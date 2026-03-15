@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface TextViewerProps {
     title: string;
@@ -8,6 +9,8 @@ interface TextViewerProps {
 }
 
 export default function TextViewer({ title, initialContent }: TextViewerProps) {
+    const { t } = useLanguage();
+
     return (
         <div className="flex flex-col w-full h-full bg-os-panel select-text">
             {/* Editor de contenido */}
@@ -21,13 +24,22 @@ export default function TextViewer({ title, initialContent }: TextViewerProps) {
                 ) : (
                     <>
                         <p className="mb-6 leading-relaxed">
-                            Lo sentimos, esto en realidad no existe porque no te obligamos a hablar con nadie.
+                            {t('text_viewer.p1')}
                         </p>
                         <p className="mb-6 leading-relaxed">
-                            Pero puedes <strong>ver una demostración grabada</strong> (a tu propio ritmo) o <strong>solicitar una demostración personalizada</strong> si lo deseas.
+                            {t('text_viewer.p2')}
                         </p>
                         <p className="mb-6 leading-relaxed">
-                            También podrías disfrutar de <strong>nuestra comparación a fondo</strong> de cómo hacemos las &quot;ventas&quot; en comparación con todos los demás.
+                            {t('text_viewer.p3')}
+                        </p>
+                        <p className="mb-6 leading-relaxed">
+                            {t('text_viewer.p4')}
+                        </p>
+                        <p className="mb-6 leading-relaxed">
+                            {t('text_viewer.p5')}
+                        </p>
+                        <p className="mb-6 leading-relaxed">
+                            {t('text_viewer.p6')}
                         </p>
                     </>
                 )}

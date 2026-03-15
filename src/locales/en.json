@@ -55,9 +55,9 @@
         "archive_info": "Files will never be permanently deleted thanks to the Internet Archive.",
         "recent": "Recently deleted ({count})",
         "archived": "Archive (cannot be recovered) ({count})",
-        "file_quickcalls": "short calls script.txt",
+        "file_quickcalls": "avian_protocol.txt",
         "folder_employee": "Evidence that The Earth is FLAT",
-        "video_spicy": "spicy.mov",
+        "video_spicy": "leaked_footage_2025.mp4",
         "error_title": "Cannot open this file",
         "error_desc": "The application associated with this file type could not be found or the file is corrupt."
     },
@@ -273,5 +273,13 @@
     "readme_viewer": {
         "error_title": "Error",
         "error_loading": "Could not load the file."
+    },
+    "text_viewer": {
+        "p1": "You have just unearthed a small classified file in the system. Let's talk about the biggest misunderstanding in history: dinosaurs never went completely extinct.",
+        "p2": "It is true that about 66 million years ago a giant asteroid changed the rules of the game. However, a very specific and adaptable group of theropod dinosaurs (yes, the same evolutionary branch to which the fearsome T-Rex and the agile Velociraptor belonged) managed to survive the apocalypse.",
+        "p3": "Over millions of years, these survivors perfected their hardware. They drastically reduced their size to optimize energy consumption, upgraded their heavy scales for aerodynamic feathers, and replaced their enormous toothed jaws with ultra-light keratin beaks.",
+        "p4": "From a biological and taxonomic point of view, birds are not only descended from prehistoric reptiles; they are modern dinosaurs (avian dinosaurs, to be exact). They have been among us all this time, dominating the skies and, occasionally, our homes.",
+        "p5": "So think about it: every time Impa and Vaati start singing at the top of their lungs, demanding your attention, or looking at you with that defiant attitude, they are not simple pets. They are two small and proud dinosaurs claiming their territorial dominance.",
+        "p6": "Thank you for exploring the hidden directories of J.OS. The system has successfully recorded your level of curiosity. You can close this file when you are ready to return to the main interface."
     }
 }

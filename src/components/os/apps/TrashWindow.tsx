@@ -97,7 +97,6 @@ export default function TrashWindow() {
                 <div className="bg-os-panel border border-os-border rounded p-3 shadow-sm transition-colors">
                     <h3 className="font-bold flex justify-between items-center text-os-panel-text mb-2 pb-2 border-b border-gray-100 dark:border-white/10 transition-colors">
                         {t('trash.title')}
-                        <span>^</span>
                     </h3>
                     <p className="text-os-text/80 text-xs leading-relaxed transition-colors">
                         {t('trash.archive_info')}
@@ -111,7 +110,7 @@ export default function TrashWindow() {
                 {/* Recientes */}
                 <div className="mb-10">
                     <h2 className="flex items-center text-sm font-bold text-os-panel-text mb-4 pb-2 border-b border-os-border transition-colors">
-                        <span className="mr-2 text-xs">v</span> {t('trash.recent').replace('{count}', RECENTLY_DELETED.length.toString())}
+                        {t('trash.recent').replace('{count}', RECENTLY_DELETED.length.toString())}
                     </h2>
                     <div className="flex flex-wrap gap-4 items-start">
                         {RECENTLY_DELETED.map(renderItem)}
@@ -121,7 +120,7 @@ export default function TrashWindow() {
                 {/* Archivo */}
                 <div>
                     <h2 className="flex items-center text-sm font-bold text-os-panel-text mb-4 pb-2 border-b border-os-border transition-colors">
-                        <span className="mr-2 text-xs">v</span> {t('trash.archived').replace('{count}', ARCHIVED.length.toString())}
+                        {t('trash.archived').replace('{count}', ARCHIVED.length.toString())}
                     </h2>
                     <div className="flex flex-wrap gap-4 items-start">
                         {ARCHIVED.map(renderItem)}
