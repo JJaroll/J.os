@@ -1,0 +1,277 @@
+{
+    "2048": {
+        "score": "Puntaje",
+        "best": "Mejor",
+        "instruction": "Une los números y llega a la ficha 2048!",
+        "new_game": "Nuevo Juego",
+        "game_over": "¡Fin del Juego!",
+        "try_again": "Intentar de Nuevo",
+        "you_win": "¡Ganaste!",
+        "keep_playing": "Seguir Jugando",
+        "restart": "Reiniciar"
+    },
+    "desktop": {
+        "settings": "Ajustes",
+        "context_menu": {
+            "info": "Obtener información",
+            "wallpaper": "Cambiar el fondo de pantalla...",
+            "reload": "Recargar"
+        }
+    },
+    "about": {
+        "title": "J.OS",
+        "bringing_pixels": "Dando vida a los píxeles",
+        "portfolio": "Portafolio personal de Jarol Espinoza",
+        "why_os": "¿Por qué un Sistema Operativo?",
+        "why_os_title": "¿Por qué un SO?",
+        "source_code": "Código fuente",
+        "credits": "Créditos",
+        "copyright": "©2026 Desarrollado por Jarol Espinoza"
+    },
+    "taskbar": {
+        "language": "Idioma"
+    },
+    "topbar": {
+        "about_website": "Acerca de J.OS",
+        "display_options": "Opciones de pantalla",
+        "start_screensaver": "Iniciar Salvapantallas",
+        "close_all_windows": "Cerrar todas las ventanas",
+        "explore_apps": "Explorar todas las apps ({count})",
+        "search_placeholder": "Escribe para buscar...",
+        "active_windows": "Ventanas activas",
+        "close_all": "Cerrar todas",
+        "products": "Aplicaciones",
+        "docs": "Documentos",
+        "community": "Redes",
+        "company": "Empresa",
+        "more": "Mas",
+        "pricing": "Precios"
+    },
+    "gallery": {
+        "title": "Fotos"
+    },
+    "trash": {
+        "title": "Papelera",
+        "archive_info": "Los archivos nunca se borrarán permanentemente gracias a Internet Archive.",
+        "recent": "Recientemente eliminados ({count})",
+        "archived": "Archivo (no se pueden recuperar) ({count})",
+        "file_quickcalls": "guion de llamadas.txt",
+        "folder_employee": "Pruebas de que la Tierra es PLANA",
+        "video_spicy": "picante.mov",
+        "error_title": "No se puede abrir este archivo",
+        "error_desc": "La aplicación asociada con este tipo de archivo no pudo ser encontrada o el archivo está corrupto."
+    },
+    "contact": {
+        "to": "Para",
+        "your_email": "Tu correo electrónico",
+        "email_placeholder": "Tu correo electrónico",
+        "source": "¿Cómo llegaste hasta aquí?",
+        "source_placeholder": "¿Cómo llegaste hasta aquí?",
+        "write_message": "Escribe tu mensaje...",
+        "send": "Enviar",
+        "error_uncomplete": "Por favor completa todos los campos requeridos.",
+        "mail_subject": "Consulta de ",
+        "mail_body_source": "Origen: ",
+        "mail_body_message_title": "Mensaje:"
+    },
+    "settings": {
+        "search": "Buscar",
+        "tabs": {
+            "appearance": "Aspecto",
+            "desktop": "Escritorio y Dock",
+            "wallpaper": "Fondo de pantalla",
+            "system": "Sistema"
+        },
+        "appearance": {
+            "title": "Aspecto",
+            "description": "Selecciona el aspecto general del sistema operativo.",
+            "auto": "Automático",
+            "light": "Claro",
+            "dark": "Obscuro",
+            "theme_title": "Tema del Sistema",
+            "theme_description": "Elige una paleta de colores global"
+        },
+        "desktop": {
+            "title": "Navegación y Sistema",
+            "animations": "Animaciones del sistema",
+            "screensaver": "Salvapantallas",
+            "disabled": "Desactivado",
+            "enabled": "Activado"
+        },
+        "wallpaper": {
+            "title": "Fondos de pantalla dinámicos",
+            "bg_dinamic": "Dinámico",
+            "bg_space": "Espacio",
+            "bg_mountain": "Montaña",
+            "bg_city": "Ciudad",
+            "bg_mountain_range": "Cordillera"
+        },
+        "system": {
+            "title": "Configuración General",
+            "description": "Ajustes generales del sistema y rendimiento.",
+            "language": "Lenguaje",
+            "restart": "Reiniciar",
+            "reload": "Recargar sistema"
+        }
+    },
+    "aiterego": {
+        "sidebar_p1": "Mis desarrollos están creados para solucionar problemas, o por simple diversión o curiosidad.",
+        "sidebar_p2": "Hay cuatro categorías principales de herramientas:",
+        "features_1": "Aplicaciones con IA 🤖",
+        "features_2": "Automatizaciones ⚙️",
+        "features_3": "Productividad 🚀",
+        "features_4": "Experimentos 🧪",
+        "open_page": "Abrir página →",
+        "empty_selection": "Selecciona un icono para ver detalles",
+        "categories": {
+            "data_stack": "Proyectos creados"
+        }
+    },
+    "music": {
+        "title": "J.OS Media Player",
+        "unknown_track": "Pista desconocida",
+        "loading_tracks": "Cargando pistas...",
+        "loading_track": "Cargando pista...",
+        "live_radio_title": "Radio en vivo",
+        "live_radio_desc": "Radio en vivo y Lo-Fi",
+        "status_playing": "Reproduciendo...",
+        "status_ready": "Listo para la acción",
+        "status_loading": "Cargando motor...",
+        "playlist": "Lista de Reproducción",
+        "view_playlist": "Ver lista de reproducción",
+        "shuffle": "Modo aleatorio",
+        "repeat": "Repetir lista",
+        "volume_hint": "El volumen se controla desde tu YouTube."
+    },
+    "folder_viewer": {
+        "disclaimer_title": "Aviso legal",
+        "disclaimer_text": "© 2026 ████████, Inc. Documento confidencial. Este material contiene marcas de agua invisibles y firmas digitales de rastreo. Cualquier filtración será investigada y los responsables serán perseguidos por todo el globo.",
+        "about_text": "Pruebas irrefutables de que nos están mintiendo sobre la curvatura de la Tierra."
+    },
+    "pdf_viewer": {
+        "zoom": "Zoom",
+        "page_indicator": "1 de 2",
+        "share": "Compartir",
+        "title": "Aumentando la sinergia mientras se maximiza el valor para los accionistas a través de esfuerzos de transformación digital",
+        "dropcap": "E",
+        "p1_start": "s imperativo dilucidar las estrategias multifacéticas que las organizaciones pueden desplegar para navegar el laberíntico paisaje de la economía digital moderna. La quintaesencia de tales esfuerzos reside en la meticulosa orquestación de la innovación tecnológica y la alineación estratégica del negocio para catalizar una amalgama sin precedentes de eficiencias interfuncionales, engendrando así una propuesta de valor superlativa para los stakeholders.",
+        "p2": "Para actualizar este paradigma, las organizaciones deben embarcarse en un viaje de transformación digital holístico, meticulosamente diseñado para trascender los silos operativos convencionales y engendrar una integración sinérgica cohesiva en todas las unidades de negocio. Esto implica el despliegue de plataformas de analítica avanzada e inteligencia artificial."
+    },
+    "video_viewer": {
+        "playback_speed": "Velocidad de reproducción"
+    },
+    "pong": {
+        "title": "PONG",
+        "first_to": "El primero en llegar a {score} puntos gana",
+        "instructions": "Usa W S o ↑ ↓ para moverte",
+        "start": "Iniciar Juego",
+        "paused": "PAUSADO",
+        "resume": "Reanudar",
+        "win": "¡GANAS!",
+        "game_over": "FIN DEL JUEGO",
+        "final_score": "Puntaje Final",
+        "play_again": "Jugar de Nuevo",
+        "pause_game": "Pausar Juego"
+    },
+    "tetris": {
+        "title": "TETRIS",
+        "mode": "MODO CLÁSICO",
+        "start": "INICIAR JUEGO",
+        "game_over": "FIN DEL JUEGO",
+        "score": "Puntaje",
+        "level": "Nivel",
+        "lines": "Líneas",
+        "try_again": "INTENTAR DE NUEVO",
+        "paused": "PAUSADO",
+        "panel_score": "PUNTAJE",
+        "panel_level": "NIVEL",
+        "panel_lines": "LÍNEAS",
+        "panel_next": "SIGUIENTE",
+        "resume": "REANUDAR",
+        "pause": "PAUSAR",
+        "rotate": "ROTAR ↻"
+    },
+    "solitaire": {
+        "title": "SOLITARIO",
+        "new_game": "Nuevo Juego",
+        "instruction": "Selecciona un destino para la carta {rank} {suit}",
+        "hint": "Pista: mueve {rank}{suit} → {destRank}{destSuit}",
+        "no_hint": "¡Sin movimientos disponibles!",
+        "you_win": "¡GANASTE! 🎉",
+        "play_again": "Jugar de Nuevo"
+    },
+    "dinorun": {
+        "hi": "HI",
+        "game_over": "FIN DEL JUEGO",
+        "tap_to_start": "TOCA PARA INICIAR",
+        "instructions": "Móvil: Toca para saltar | Escritorio: Barra espaciadora"
+    },
+    "flappybird": {
+        "title": "FLAPPY OS",
+        "tap_to_start": "TOCA PARA INICIAR",
+        "game_over": "FIN DEL JUEGO",
+        "score": "PUNTAJE",
+        "best": "MEJOR",
+        "tap_to_restart": "TOCA PARA REINICIAR"
+    },
+    "pacman": {
+        "title": "PAC-MAN",
+        "instructions": "Usa WASD o las Flechas para moverte",
+        "insert_coin": "Insertar Moneda",
+        "you_win": "¡GANASTE!",
+        "game_over": "FIN DEL JUEGO",
+        "final_score": "Puntaje Final: {score}",
+        "play_again": "Jugar de Nuevo",
+        "score": "Puntaje",
+        "hi_score": "PUNTAJE MÁXIMO"
+    },
+    "minesweeper": {
+        "you_win": "¡GANASTE! 😎",
+        "game_over": "FIN DEL JUEGO 💥"
+    },
+    "breakout": {
+        "title": "BREAKOUT",
+        "instructions": "Arrastra para mover la paleta",
+        "start": "Iniciar Juego",
+        "game_over": "FIN DEL JUEGO",
+        "score": "Puntaje: {score}",
+        "try_again": "Intentar de Nuevo",
+        "you_win": "¡GANASTE!",
+        "final_score": "Puntaje Final: {score}",
+        "play_again": "Jugar de Nuevo",
+        "hud_score": "PUNTAJE: {score}"
+    },
+    "games_window": {
+        "title": "Juegos",
+        "play_now": "Jugar Ahora",
+        "coming_soon": "Próximamente",
+        "exit_game": "Salir del Juego",
+        "not_implemented": "Iniciando {label}... (Aún no implementado)",
+        "minesweeper_label": "Buscaminas",
+        "minesweeper_desc": "Clásico juego de puzzle lógico.",
+        "solitaire_label": "Solitario",
+        "solitaire_desc": "Clásico juego de cartas.",
+        "pacman_label": "Pac-Man Clone",
+        "pacman_desc": "Come puntos y evita fantasmas.",
+        "tetris_label": "Tetris",
+        "tetris_desc": "Limpia líneas en este clásico juego de bloques.",
+        "pong_label": "Pong",
+        "pong_desc": "Juego deportivo de pong clásico.",
+        "rpg_label": "Mini RPG",
+        "rpg_desc": "Una aventura te espera.",
+        "doom_label": "DOOM",
+        "doom_desc": "El clásico shooter en primera persona de 1993, jugable en línea.",
+        "2048_label": "2048",
+        "2048_desc": "Une los números para llegar a la ficha 2048.",
+        "dinorun_label": "Dino Run",
+        "dinorun_desc": "Salta obstáculos en esta carrera infinita.",
+        "flappybird_label": "Flappy OS",
+        "flappybird_desc": "Toca para volar y evitar las tuberías.",
+        "breakout_label": "Breakout",
+        "breakout_desc": "Rebota la pelota y rompe los bloques."
+    },
+    "readme_viewer": {
+        "error_title": "Error",
+        "error_loading": "No se pudo cargar el archivo."
+    }
+}

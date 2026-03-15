@@ -1,0 +1,277 @@
+{
+    "2048": {
+        "score": "スコア",
+        "best": "ベスト",
+        "instruction": "数字を合体させて2048タイルを目指そう！",
+        "new_game": "新しいゲーム",
+        "game_over": "ゲームオーバー！",
+        "try_again": "もう一度",
+        "you_win": "あなたの勝ち！",
+        "keep_playing": "続ける",
+        "restart": "リスタート"
+    },
+    "desktop": {
+        "settings": "設定",
+        "context_menu": {
+            "info": "情報を取得",
+            "wallpaper": "壁紙を変更...",
+            "reload": "再読込"
+        }
+    },
+    "about": {
+        "title": "J.OS",
+        "bringing_pixels": "ピクセルに命を吹き込む",
+        "portfolio": "ハロル・エスピノザの個人ポートフォリオ",
+        "why_os": "なぜ<br />オペレーティングシステムなのか？",
+        "why_os_title": "なぜOSなのか？",
+        "source_code": "ソースコード",
+        "credits": "クレジット",
+        "copyright": "©2026 開発：ハロル・エスピノザ"
+    },
+    "taskbar": {
+        "language": "言語"
+    },
+    "topbar": {
+        "about_website": "J.OSについて",
+        "display_options": "ディスプレイ設定",
+        "start_screensaver": "スクリーンセーバーを開始",
+        "close_all_windows": "すべてのウィンドウを閉じる",
+        "explore_apps": "すべてのアプリを探索 ({count})",
+        "search_placeholder": "入力して検索...",
+        "active_windows": "アクティブなウィンドウ",
+        "close_all": "すべて閉じる",
+        "products": "アプリケーション",
+        "docs": "文書",
+        "community": "コミュニティ",
+        "company": "会社",
+        "more": "もっと",
+        "pricing": "価格"
+    },
+    "gallery": {
+        "title": "写真"
+    },
+    "trash": {
+        "title": "ゴミ箱",
+        "archive_info": "Internet Archiveのおかげで、ファイルが永久に削除されることはありません。",
+        "recent": "最近削除された項目 ({count})",
+        "archived": "アーカイブ（復元不可） ({count})",
+        "file_quickcalls": "ショートコールの台本.txt",
+        "folder_employee": "地球が平らであるという証拠",
+        "video_spicy": "スパイシー.mov",
+        "error_title": "このファイルを開けません",
+        "error_desc": "このファイル形式に関連付けられたアプリケーションが見つからないか、ファイルが破損しています。"
+    },
+    "settings": {
+        "search": "検索",
+        "tabs": {
+            "appearance": "外観",
+            "desktop": "デスクトップとドック",
+            "wallpaper": "壁紙",
+            "system": "システム"
+        },
+        "appearance": {
+            "title": "外観",
+            "description": "システム全体の外観を選択してください。",
+            "auto": "自動",
+            "light": "ライト",
+            "dark": "ダーク",
+            "theme_title": "システムテーマ",
+            "theme_description": "グローバルカラーパレットを選択"
+        },
+        "desktop": {
+            "title": "ナビゲーションとシステム",
+            "animations": "システムアニメーション",
+            "screensaver": "スクリーンセーバー",
+            "disabled": "無効",
+            "enabled": "有効"
+        },
+        "wallpaper": {
+            "title": "ダイナミック壁紙",
+            "bg_dinamic": "ダイナミック",
+            "bg_space": "宇宙",
+            "bg_mountain": "山",
+            "bg_city": "都市",
+            "bg_mountain_range": "山脈"
+        },
+        "system": {
+            "title": "一般設定",
+            "description": "一般的なシステムおよびパフォーマンス設定。",
+            "language": "言語",
+            "restart": "再起動",
+            "reload": "システムを再読み込み"
+        }
+    },
+    "contact": {
+        "to": "宛先",
+        "your_email": "メールアドレス",
+        "email_placeholder": "メールアドレス",
+        "source": "どうやってここに来たのですか？",
+        "source_placeholder": "どうやってここに来たのですか？",
+        "write_message": "メッセージを入力してください...",
+        "send": "送信",
+        "error_uncomplete": "必須フィールドをすべて入力してください。",
+        "mail_subject": "お問い合わせ：",
+        "mail_body_source": "ソース：",
+        "mail_body_message_title": "メッセージ："
+    },
+    "aiterego": {
+        "sidebar_p1": "私の開発は、問題解決のため、あるいは単に楽しみや好奇心から作成されています。",
+        "sidebar_p2": "ツールには4つの主要なカテゴリがあります：",
+        "features_1": "AI搭載アプリ 🤖",
+        "features_2": "自動化 ⚙️",
+        "features_3": "生産性 🚀",
+        "features_4": "実験 🧪",
+        "open_page": "ページを開く →",
+        "empty_selection": "詳細を表示するにはアイコンを選択してください",
+        "categories": {
+            "data_stack": "アプリケーションデータスタック"
+        }
+    },
+    "music": {
+        "title": "J.OS Media Player",
+        "unknown_track": "不明なトラック",
+        "loading_tracks": "トラックを読み込み中...",
+        "loading_track": "トラックを読み込み中...",
+        "live_radio_title": "ライブラジオ",
+        "live_radio_desc": "ライブラジオとLo-Fi",
+        "status_playing": "再生中...",
+        "status_ready": "準備完了",
+        "status_loading": "エンジンを読み込み中...",
+        "playlist": "プレイリスト",
+        "view_playlist": "プレイリストを見る",
+        "shuffle": "シャッフル",
+        "repeat": "リピート",
+        "volume_hint": "音量はYouTubeで制御されます。"
+    },
+    "folder_viewer": {
+        "disclaimer_title": "法的通知",
+        "disclaimer_text": "© 2026 ████████, Inc. 機密文書。この資料には、目に見えない透かしと追跡用のデジタル署名が含まれています。いかなる情報漏洩も調査され、関係者は地球中を追跡されます",
+        "about_text": "地球の曲率に関して私たちが嘘をつかれていることの反論の余地のない証拠。"
+    },
+    "pdf_viewer": {
+        "zoom": "ズーム",
+        "page_indicator": "2 分の 1",
+        "share": "共有",
+        "title": "デジタルトランスフォーメーションの取り組みを通じた株主価値の最大化とシナジーの向上",
+        "dropcap": "現",
+        "p1_start": "代のデジタル経済の迷宮のような状況をナビゲートするために、組織が展開できる多面的な戦略を解明することが不可欠です。このような取り組みの真髄は、技術革新と戦略的なビジネスアライメントを綿密に調整し、前例のない部門横断的な効率性の融合を促進し、それによって利害関係者に最高の価値提案を生み出すことにあります。",
+        "p2": "このパラダイムを実現するためには、組織は従来の運用上のサイロを超越し、すべてのビジネスユニットにわたる凝集した相乗的な統合を生み出すように綿密に設計された、全体的なデジタルトランスフォーメーションの旅に乗り出さなければなりません。これには、高度な分析および人工知能プラットフォームの展開が含まれます。"
+    },
+    "video_viewer": {
+        "playback_speed": "再生速度"
+    },
+    "pong": {
+        "title": "PONG",
+        "first_to": "先に{score}点取った方が勝ち",
+        "instructions": "移動には W S または ↑ ↓ を使用してください",
+        "start": "ゲーム開始",
+        "paused": "一時停止中",
+        "resume": "再開",
+        "win": "あなたの勝ち！",
+        "game_over": "ゲームオーバー",
+        "final_score": "最終スコア",
+        "play_again": "もう一度プレイ",
+        "pause_game": "ゲームを一時停止"
+    },
+    "tetris": {
+        "title": "TETRIS",
+        "mode": "クラシックモード",
+        "start": "ゲーム開始",
+        "game_over": "ゲームオーバー",
+        "score": "スコア",
+        "level": "レベル",
+        "lines": "ライン",
+        "try_again": "もう一度挑戦する",
+        "paused": "一時停止中",
+        "panel_score": "スコア",
+        "panel_level": "レベル",
+        "panel_lines": "ライン",
+        "panel_next": "次",
+        "resume": "再開",
+        "pause": "一時停止",
+        "rotate": "回転 ↻"
+    },
+    "solitaire": {
+        "title": "ソリティア",
+        "new_game": "新しいゲーム",
+        "instruction": "{suit}の{rank}の移動先を選択してください",
+        "hint": "ヒント: {rank}{suit} → {destRank}{destSuit} に移動",
+        "no_hint": "移動可能な手がありません！",
+        "you_win": "勝利！ 🎉",
+        "play_again": "もう一度プレイ"
+    },
+    "dinorun": {
+        "hi": "最高",
+        "game_over": "ゲームオーバー",
+        "tap_to_start": "タップして開始",
+        "instructions": "モバイル：タップでジャンプ | デスクトップ：スペースキー"
+    },
+    "flappybird": {
+        "title": "フラッピー OS",
+        "tap_to_start": "タップして開始",
+        "game_over": "ゲームオーバー",
+        "score": "スコア",
+        "best": "ベスト",
+        "tap_to_restart": "タップして再試行"
+    },
+    "pacman": {
+        "title": "パックマン",
+        "instructions": "WASDまたは矢印キーで移動",
+        "insert_coin": "コインを投入",
+        "you_win": "あなたの勝ち！",
+        "game_over": "ゲームオーバー",
+        "final_score": "最終スコア: {score}",
+        "play_again": "もう一度プレイ",
+        "score": "スコア",
+        "hi_score": "ハイスコア"
+    },
+    "minesweeper": {
+        "you_win": "あなたの勝ち！ 😎",
+        "game_over": "ゲームオーバー 💥"
+    },
+    "breakout": {
+        "title": "ブロック崩し",
+        "instructions": "ドラッグしてパドルを移動",
+        "start": "ゲーム開始",
+        "game_over": "ゲームオーバー",
+        "score": "スコア: {score}",
+        "try_again": "もう一度",
+        "you_win": "あなたの勝ち！",
+        "final_score": "最終スコア: {score}",
+        "play_again": "もう一度プレイ",
+        "hud_score": "スコア: {score}"
+    },
+    "games_window": {
+        "title": "ゲーム",
+        "play_now": "今すぐプレイ",
+        "coming_soon": "カミングスーン",
+        "exit_game": "ゲームを終了",
+        "not_implemented": "{label}を開始中... (未実装)",
+        "minesweeper_label": "マインスイーパ",
+        "minesweeper_desc": "古典的なロジックパズルゲーム。",
+        "solitaire_label": "ソリティア",
+        "solitaire_desc": "古典的なカードゲーム。",
+        "pacman_label": "パックマン クローン",
+        "pacman_desc": "ドットを食べてゴーストを避けよう。",
+        "tetris_label": "テトリス",
+        "tetris_desc": "古典的なブロックゲームでラインを消そう。",
+        "pong_label": "ポン",
+        "pong_desc": "古典的なポンスポーツゲーム。",
+        "rpg_label": "ミニRPG",
+        "rpg_desc": "冒険があなたを待っている。",
+        "doom_label": "DOOM",
+        "doom_desc": "1993年の古典的なFPS、オンラインでプレイ可能。",
+        "2048_label": "2048",
+        "2048_desc": "数字を合体させて2048タイルを目指そう。",
+        "dinorun_label": "ディノラン",
+        "dinorun_desc": "障害物を飛び越えて進むエンドレスランナー。",
+        "flappybird_label": "フラッピー OS",
+        "flappybird_desc": "タップして飛んで土管を避けよう。",
+        "breakout_label": "ブロック崩し",
+        "breakout_desc": "ボールを跳ね返してブロックを壊そう。"
+    },
+    "readme_viewer": {
+        "error_title": "エラー",
+        "error_loading": "ファイルを読み込めませんでした。"
+    }
+}

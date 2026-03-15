@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA CRÍTICO - jjaroll.dev</title>
+    <style>
+        :root {
+            --bsod-blue: #0078d7;
+            --glitch-color-1: #ff00ff;
+            --glitch-color-2: #00ffff;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none;
+            /* Ocultamos el cursor real */
+        }
+
+        body {
+            background-color: var(--bsod-blue);
+            color: var(--text-color);
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            user-select: none;
+            padding: 20px;
+            transition: background-color 0.1s;
+        }
+
+        /* Capa base del contenido */
+        #content {
+            width: 100%;
+            max-width: 900px;
+            padding: clamp(15px, 4vw, 40px);
+            position: relative;
+            z-index: 2;
+            transition: transform 0.05s, text-shadow 0.05s;
+        }
+
+        .wink-face {
+            font-size: clamp(70px, 15vw, 130px);
+            margin-bottom: clamp(15px, 3vw, 30px);
+            display: block;
+            line-height: 1;
+        }
+
+        h1 {
+            font-size: clamp(20px, 4vw, 32px);
+            font-weight: 300;
+            line-height: 1.4;
+            margin-bottom: clamp(20px, 4vw, 40px);
+        }
+
+        .percentage-container {
+            font-size: clamp(20px, 3vw, 24px);
+            margin-bottom: clamp(20px, 4vw, 40px);
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* Media query para pantallas más grandes */
+        @media (min-width: 600px) {
+            .info-container {
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+
+        .qr-placeholder {
+            width: clamp(90px, 15vw, 120px);
+            height: clamp(90px, 15vw, 120px);
+            background: white;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+
+        .qr-placeholder svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .details {
+            font-size: clamp(12px, 2.5vw, 15px);
+            line-height: 1.6;
+            word-break: break-word;
+        }
+
+        .details span {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Indicador para iniciar audio */
+        #start-prompt {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 12px;
+            opacity: 0.7;
+            animation: blink 1.5s infinite;
+            z-index: 20;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0.7;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Animación de escaneo estilo CRT */
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 5;
+            opacity: 0.6;
+            animation: scan 6s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% {
+                top: -10px;
+            }
+
+            100% {
+                top: 100vh;
+            }
+        }
+
+        /* Estilos de distorsión dinámica */
+        .glitch-slice {
+            position: fixed;
+            background: var(--bsod-blue);
+            width: 100vw;
+            z-index: 15;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        /* Viñeta sutil para realismo de pantalla */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.2) 100%);
+            pointer-events: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="start-prompt">&gt; HAZ CLIC O TOCA PARA INICIAR DIAGNÓSTICO</div>
+    <div class="scanline"></div>
+
+    <div id="content">
+        <span class="wink-face">;)</span>
+        <h1>Se produjo un problema en jjaroll.dev y necesita reiniciarse. Solo estamos recopilando información sobre el
+            error y... a ver esto claramente es a propósito, en serio creen que permitiría que esto le pasara a mi
+            sitio? Pff.</h1>
+
+        <p class="percentage-container">
+            <span id="percentage">0</span>% completado
+        </p>
+
+        <div class="info-container">
+            <div class="qr-placeholder">
+                <!-- QR dinámico apuntando a fosil.dev -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://fosil.dev&margin=0"
+                    alt="QR Code fosil.dev"
+                    style="width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated;">
+            </div>
+            <div class="details">
+                <span>Si leiste hasta acá, igual podrías echarte una vueltecita por mi repositorio de Github:</span>
+                <span style="font-weight: bold;">https://github.com/JJaroll</span>
+                <br>
+                <span>Si llamas a un soporte técnico, dales esta información:</span>
+                <span>Código de detención: <strong id="error-code">APRENDE_A_PROGRAMAR_ES_MUY_FÁCIL</strong></span>
+                <span>Lo que falló: jjaroll_core.sys</span>
+                <span>y si, el QR si funciona.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor para los slices de glitch -->
+    <div id="glitch-container"></div>
+
+    <script>
+        const content = document.getElementById('content');
+        const percentageText = document.getElementById('percentage');
+        const glitchContainer = document.getElementById('glitch-container');
+        const startPrompt = document.getElementById('start-prompt');
+
+        let audioCtx;
+        let noiseBuffer;
+        let isAudioInitialized = false;
+
+        // 1. Contador de porcentaje
+        let pct = 0;
+        const interval = setInterval(() => {
+            if (pct < 100) {
+                pct += Math.floor(Math.random() * 3);
+                if (pct > 100) pct = 100;
+                percentageText.innerText = pct;
+            } else {
+                document.getElementById('error-code').innerText = "RESTARTING_EXPERIENCE...";
+            }
+        }, 1000);
+
+        // 2. Inicialización de Audio (Requerido por los navegadores)
+        function initAudio() {
+            if (isAudioInitialized) return;
+
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+            // Generar buffer de "ruido blanco" (estática)
+            const bufferSize = audioCtx.sampleRate * 0.1; // 100 milisegundos
+            noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+                output[i] = Math.random() * 2 - 1; // Valores entre -1 y 1
+            }
+
+            isAudioInitialized = true;
+            startPrompt.style.display = 'none'; // Ocultar mensaje al interactuar
+        }
+
+        // Detectar primera interacción para habilitar el audio
+        document.addEventListener('mousedown', initAudio);
+        document.addEventListener('touchstart', initAudio, { passive: true });
+        document.addEventListener('keydown', initAudio);
+
+        // 3. Efectos Visuales y Sonoros al mover el cursor/dedo
+        function handleMovement(clientX, clientY) {
+            // Efecto Visual: Crear rebanadas de pantalla
+            createGlitchSlice(clientY);
+
+            // Efecto Visual: Aberración cromática y temblor del contenido
+            const intensity = 4;
+            const x = (Math.random() - 0.5) * intensity;
+            const y = (Math.random() - 0.5) * intensity;
+
+            // Separación RGB para efecto 3D fallido
+            const shadowX = (Math.random() - 0.5) * 8;
+            content.style.transform = `translate(${x}px, ${y}px)`;
+            content.style.textShadow = `${shadowX}px 0px 0px rgba(255,0,255,0.7), ${-shadowX}px 0px 0px rgba(0,255,255,0.7)`;
+
+            // Restaurar texto a la normalidad rápidamente
+            clearTimeout(content.glitchTimeout);
+            content.glitchTimeout = setTimeout(() => {
+                content.style.transform = `translate(0px, 0px)`;
+                content.style.textShadow = `none`;
+            }, 100);
+
+            // Cambio sutil de color de fondo
+            if (Math.random() > 0.8) {
+                document.body.style.backgroundColor = Math.random() > 0.5 ? "#006cc1" : "#0078d7";
+                setTimeout(() => {
+                    document.body.style.backgroundColor = "#0078d7";
+                }, 50);
+            }
+
+            // Efecto Sonoro: Reproducir sonido de estática aleatorio
+            if (isAudioInitialized && audioCtx.state === 'running' && Math.random() > 0.5) {
+                playGlitchNoise();
+            }
+        }
+
+        // Eventos de movimiento (Mouse y Táctil)
+        document.addEventListener('mousemove', (e) => handleMovement(e.clientX, e.clientY));
+        document.addEventListener('touchmove', (e) => {
+            if (e.touches.length > 0) {
+                handleMovement(e.touches[0].clientX, e.touches[0].clientY);
+            }
+        }, { passive: true });
+
+        // Crear "rebanadas" que interrumpen la pantalla
+        function createGlitchSlice(yPos) {
+            // Limitar cantidad de rebanadas en pantalla para rendimiento
+            if (glitchContainer.childElementCount > 5) return;
+
+            const slice = document.createElement('div');
+            slice.className = 'glitch-slice';
+
+            const height = Math.random() * 30 + 2;
+            const topPos = yPos + (Math.random() - 0.5) * 150;
+            const offset = (Math.random() - 0.5) * 20;
+
+            slice.style.top = `${topPos}px`;
+            slice.style.height = `${height}px`;
+            slice.style.left = `${offset}px`;
+            slice.style.opacity = Math.random() * 0.5;
+
+            const colors = ['#ff00ff', '#00ffff', 'rgba(255,255,255,0.5)'];
+            slice.style.borderTop = `1px solid ${colors[Math.floor(Math.random() * colors.length)]}`;
+            slice.style.borderBottom = `1px solid ${colors[Math.floor(Math.random() * colors.length)]}`;
+
+            glitchContainer.appendChild(slice);
+
+            setTimeout(() => slice.remove(), 50 + Math.random() * 100);
+        }
+
+        // Reproducir sonido de hardware fallando (estática filtrada)
+        function playGlitchNoise() {
+            if (!audioCtx) return;
+
+            const noiseSource = audioCtx.createBufferSource();
+            noiseSource.buffer = noiseBuffer;
+
+            // Filtro pasa-banda para dar un tono metálico/digital al ruido
+            const filter = audioCtx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.value = Math.random() * 4000 + 500; // Frecuencias erráticas
+
+            // Control de volumen (corto y punzante)
+            const gainNode = audioCtx.createGain();
+            gainNode.gain.setValueAtTime(0.05 + Math.random() * 0.05, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+
+            // Conectar nodos: Fuente -> Filtro -> Volumen -> Salida
+            noiseSource.connect(filter);
+            filter.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            noiseSource.start();
+        }
+    </script>
+</body>
+
+</html>

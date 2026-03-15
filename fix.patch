@@ -1,0 +1,49 @@
+--- src/components/os/apps/viewers/VideoViewer.tsx
++++ src/components/os/apps/viewers/VideoViewer.tsx
+@@ -1,7 +1,8 @@
+ 'use client';
+ 
+ import React, { useState, useRef, useEffect } from 'react';
+-import ReactPlayer from 'react-player';
++import dynamic from 'next/dynamic';
++const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
+ 
+ interface VideoViewerProps {
+     title: string;
+@@ -10,7 +11,6 @@
+ export default function VideoViewer({ title }: VideoViewerProps) {
+     const playerRef = useRef<ReactPlayer>(null);
+     const containerRef = useRef<HTMLDivElement>(null);
+-    const [mounted, setMounted] = useState(false);
+ 
+     const [playing, setPlaying] = useState(true);
+     const [volume, setVolume] = useState(0.8);
+@@ -21,10 +21,6 @@
+     const [seeking, setSeeking] = useState(false);
+     const [showControls, setShowControls] = useState(true);
+     const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+-
+-    useEffect(() => {
+-        setMounted(true);
+-    }, []);
+ 
+     // Auto-hide controls after 3 seconds of inactivity
+     useEffect(() => {
+@@ -129,7 +125,7 @@
+         <div ref={containerRef} className="flex flex-col w-full h-full bg-black text-white select-none relative group">
+             {/* Video Container (YouTube Embed via react-player) */}
+             <div className="flex-1 relative flex items-center justify-center overflow-hidden bg-black pb-0 cursor-pointer" onClick={handlePlayPause}>
+-                {mounted && <ReactPlayer
++                <ReactPlayer
+                     ref={playerRef}
+                     url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                     className="absolute top-0 left-0 pointer-events-none"
+@@ -148,12 +144,12 @@
+                                 disablekb: 1 
+                             }
+                         }
+-                    }}
+-                />}
++                    }} />
+             </div>
+ 

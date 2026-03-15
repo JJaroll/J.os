@@ -1,0 +1,277 @@
+{
+    "2048": {
+        "score": "Score",
+        "best": "Best",
+        "instruction": "Join the numbers and get to the 2048 tile!",
+        "new_game": "New Game",
+        "game_over": "Game Over!",
+        "try_again": "Try Again",
+        "you_win": "You Win!",
+        "keep_playing": "Keep Playing",
+        "restart": "Restart"
+    },
+    "desktop": {
+        "settings": "Settings",
+        "context_menu": {
+            "info": "Get Info",
+            "wallpaper": "Change Wallpaper...",
+            "reload": "Reload"
+        }
+    },
+    "about": {
+        "title": "J.OS",
+        "bringing_pixels": "Bringing pixels to life",
+        "portfolio": "Personal portfolio of Jarol Espinoza",
+        "why_os": "Why an<br />Operating System?",
+        "why_os_title": "Why an OS?",
+        "source_code": "Source code",
+        "credits": "Credits",
+        "copyright": "©2026 Developed by Jarol Espinoza"
+    },
+    "taskbar": {
+        "language": "Language"
+    },
+    "topbar": {
+        "about_website": "About J.OS",
+        "display_options": "Display Settings",
+        "start_screensaver": "Start Screensaver",
+        "close_all_windows": "Close All Windows",
+        "explore_apps": "Explore all apps ({count})",
+        "search_placeholder": "Type to search...",
+        "active_windows": "Active windows",
+        "close_all": "Close all",
+        "products": "Applications",
+        "docs": "Documents",
+        "community": "Social",
+        "company": "Company",
+        "more": "More",
+        "pricing": "Pricing"
+    },
+    "gallery": {
+        "title": "Photos"
+    },
+    "trash": {
+        "title": "Trash",
+        "archive_info": "Files will never be permanently deleted thanks to the Internet Archive.",
+        "recent": "Recently deleted ({count})",
+        "archived": "Archive (cannot be recovered) ({count})",
+        "file_quickcalls": "short calls script.txt",
+        "folder_employee": "Evidence that The Earth is FLAT",
+        "video_spicy": "spicy.mov",
+        "error_title": "Cannot open this file",
+        "error_desc": "The application associated with this file type could not be found or the file is corrupt."
+    },
+    "contact": {
+        "to": "To",
+        "your_email": "Your email",
+        "email_placeholder": "Your email",
+        "source": "How did you get here?",
+        "source_placeholder": "How did you get here?",
+        "write_message": "Write your message...",
+        "send": "Send",
+        "error_uncomplete": "Please complete all required fields.",
+        "mail_subject": "Inquiry from ",
+        "mail_body_source": "Source: ",
+        "mail_body_message_title": "Message:"
+    },
+    "settings": {
+        "search": "Search",
+        "tabs": {
+            "appearance": "Appearance",
+            "desktop": "Desktop & Dock",
+            "wallpaper": "Wallpaper",
+            "system": "System"
+        },
+        "appearance": {
+            "title": "Appearance",
+            "description": "Select the general appearance of the operating system.",
+            "auto": "Auto",
+            "light": "Light",
+            "dark": "Dark",
+            "theme_title": "System Theme",
+            "theme_description": "Choose a global color palette"
+        },
+        "desktop": {
+            "title": "Navigation & System",
+            "animations": "System Animations",
+            "screensaver": "Screensaver",
+            "disabled": "Disabled",
+            "enabled": "Enabled"
+        },
+        "wallpaper": {
+            "title": "Dynamic Wallpapers",
+            "bg_dinamic": "Dynamic",
+            "bg_space": "Space",
+            "bg_mountain": "Mountain",
+            "bg_city": "City",
+            "bg_mountain_range": "Mountain Range"
+        },
+        "system": {
+            "title": "General Settings",
+            "description": "General system and performance settings.",
+            "language": "Language",
+            "restart": "Restart",
+            "reload": "Reload system"
+        }
+    },
+    "aiterego": {
+        "sidebar_p1": "My developments are created to solve problems, or simply for fun or out of curiosity.",
+        "sidebar_p2": "There are four main categories of tools:",
+        "features_1": "AI-powered apps 🤖",
+        "features_2": "Automation ⚙️",
+        "features_3": "Productivity 🚀",
+        "features_4": "Experiments 🧪",
+        "open_page": "Open page →",
+        "empty_selection": "Select an icon to view details",
+        "categories": {
+            "data_stack": "Application Data Stack"
+        }
+    },
+    "music": {
+        "title": "J.OS Media Player",
+        "unknown_track": "Unknown track",
+        "loading_tracks": "Loading tracks...",
+        "loading_track": "Loading track...",
+        "live_radio_title": "Live Radio",
+        "live_radio_desc": "Live Radio and Lo-Fi",
+        "status_playing": "Playing...",
+        "status_ready": "Ready for action",
+        "status_loading": "Loading engine...",
+        "playlist": "Playlist",
+        "view_playlist": "View playlist",
+        "shuffle": "Shuffle mode",
+        "repeat": "Repeat list",
+        "volume_hint": "Volume is controlled from your YouTube."
+    },
+    "folder_viewer": {
+        "disclaimer_title": "Legal Notice",
+        "disclaimer_text": "© 2026 ████████, Inc. Confidential document. This material contains invisible watermarks and digital tracking signatures. Any leaks will be investigated and those responsible will be pursued across the globe",
+        "about_text": "Irrefutable proof that we are being lied to about the curvature of the Earth."
+    },
+    "pdf_viewer": {
+        "zoom": "Zoom",
+        "page_indicator": "1 of 2",
+        "share": "Share",
+        "title": "Increasing synergy while maximizing shareholder value through digital transformation efforts",
+        "dropcap": "I",
+        "p1_start": "t is imperative to elucidate the multifaceted strategies that organizations can deploy to navigate the labyrinthine landscape of the modern digital economy. The quintessence of such efforts lies in the meticulous orchestration of technological innovation and strategic business alignment to catalyze an unprecedented amalgam of cross-functional efficiencies, thereby engendering a superlative value proposition for stakeholders.",
+        "p2": "To actualize this paradigm, organizations must embark on a holistic digital transformation journey, meticulously designed to transcend conventional operational silos and engender cohesive synergistic integration across all business units. This involves the deployment of advanced analytics and artificial intelligence platforms."
+    },
+    "video_viewer": {
+        "playback_speed": "Playback Speed"
+    },
+    "pong": {
+        "title": "PONG",
+        "first_to": "First to {score} points wins",
+        "instructions": "Use W S or ↑ ↓ to move",
+        "start": "Start Game",
+        "paused": "PAUSED",
+        "resume": "Resume",
+        "win": "YOU WIN!",
+        "game_over": "GAME OVER",
+        "final_score": "Final Score",
+        "play_again": "Play Again",
+        "pause_game": "Pause Game"
+    },
+    "tetris": {
+        "title": "TETRIS",
+        "mode": "CLASSIC MODE",
+        "start": "START GAME",
+        "game_over": "GAME OVER",
+        "score": "Score",
+        "level": "Level",
+        "lines": "Lines",
+        "try_again": "TRY AGAIN",
+        "paused": "PAUSED",
+        "panel_score": "SCORE",
+        "panel_level": "LEVEL",
+        "panel_lines": "LINES",
+        "panel_next": "NEXT",
+        "resume": "RESUME",
+        "pause": "PAUSE",
+        "rotate": "ROTATE ↻"
+    },
+    "solitaire": {
+        "title": "SOLITAIRE",
+        "new_game": "New Game",
+        "instruction": "Select a destination for the {rank} of {suit}",
+        "hint": "Hint: move {rank}{suit} → {destRank}{destSuit}",
+        "no_hint": "No moves available!",
+        "you_win": "YOU WIN! 🎉",
+        "play_again": "Play Again"
+    },
+    "dinorun": {
+        "hi": "HI",
+        "game_over": "GAME OVER",
+        "tap_to_start": "TAP TO START",
+        "instructions": "Mobile: Tap to jump | Desktop: Spacebar"
+    },
+    "flappybird": {
+        "title": "FLAPPY OS",
+        "tap_to_start": "TAP TO START",
+        "game_over": "GAME OVER",
+        "score": "SCORE",
+        "best": "BEST",
+        "tap_to_restart": "TAP TO RESTART"
+    },
+    "pacman": {
+        "title": "PAC-MAN",
+        "instructions": "Use WASD or Arrows to move",
+        "insert_coin": "Insert Coin",
+        "you_win": "YOU WIN!",
+        "game_over": "GAME OVER",
+        "final_score": "Final Score: {score}",
+        "play_again": "Play Again",
+        "score": "Score",
+        "hi_score": "HIGH SCORE"
+    },
+    "minesweeper": {
+        "you_win": "YOU WIN! 😎",
+        "game_over": "GAME OVER 💥"
+    },
+    "breakout": {
+        "title": "BREAKOUT",
+        "instructions": "Drag to move paddle",
+        "start": "Start Game",
+        "game_over": "GAME OVER",
+        "score": "Score: {score}",
+        "try_again": "Try Again",
+        "you_win": "YOU WIN!",
+        "final_score": "Final Score: {score}",
+        "play_again": "Play Again",
+        "hud_score": "SCORE: {score}"
+    },
+    "games_window": {
+        "title": "Games",
+        "play_now": "Play Now",
+        "coming_soon": "Coming Soon",
+        "exit_game": "Exit Game",
+        "not_implemented": "Starting {label}... (Not implemented yet)",
+        "minesweeper_label": "Minesweeper",
+        "minesweeper_desc": "Classic logic puzzle game.",
+        "solitaire_label": "Solitaire",
+        "solitaire_desc": "Classic card game.",
+        "pacman_label": "Pac-Man Clone",
+        "pacman_desc": "Eat dots and avoid ghosts.",
+        "tetris_label": "Tetris",
+        "tetris_desc": "Clear lines in this classic block game.",
+        "pong_label": "Pong",
+        "pong_desc": "Classic pong sports game.",
+        "rpg_label": "Mini RPG",
+        "rpg_desc": "An adventure awaits you.",
+        "doom_label": "DOOM",
+        "doom_desc": "The classic 1993 first-person shooter, playable online.",
+        "2048_label": "2048",
+        "2048_desc": "Join the numbers to get to the 2048 tile.",
+        "dinorun_label": "Dino Run",
+        "dinorun_desc": "Jump over obstacles in this endless runner.",
+        "flappybird_label": "Flappy OS",
+        "flappybird_desc": "Tap to fly and avoid the pipes.",
+        "breakout_label": "Breakout",
+        "breakout_desc": "Bounce the ball and break the blocks."
+    },
+    "readme_viewer": {
+        "error_title": "Error",
+        "error_loading": "Could not load the file."
+    }
+}
