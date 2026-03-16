@@ -185,5 +185,6 @@ export function useOS() {
     if (context === undefined) {
         throw new Error('useOS debe usarse dentro de un OSProvider');
     }
+    console.log("ESTADO DE LAS APPS EN J.OS:", appsList);
     return context;
 }
