@@ -179,6 +179,21 @@ import {
   AppWindowMac,
   SquareCheckBig,
   AppWindow,
+  Bird,
+  Bug,
+  Cat,
+  Egg,
+  Fish,
+  Origami,
+  Rabbit,
+  Rat,
+  Shell,
+  Shrimp,
+  Snail,
+  Squirrel,
+  Turtle,
+  Worm,
+  Birdhouse,
   type LucideProps,
 } from 'lucide-react';
 
@@ -187,6 +202,9 @@ const ICON_MAP: Record<string, React.ComponentType<LucideProps>> = {
   // Files & Folders
   Folder, FolderOpen, FolderPlus,
   File, FileText, FileCode, FileImage, FileArchive,
+
+  //Animals
+  Bird, Bug, Cat, Egg, Fish, Origami, Rabbit, Rat, Shell, Shrimp, Snail, Squirrel, Turtle, Worm, Birdhouse,
 
   // System
   Settings, Settings2, Terminal, Monitor, Laptop, Smartphone, Tablet,
