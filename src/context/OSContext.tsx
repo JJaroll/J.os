@@ -79,7 +79,7 @@ export function OSProvider({ children }: { children: React.ReactNode }) {
 
     const [colorMode, setColorMode] = useLocalStorage('os-colorMode', 'light');
     const [theme, setTheme] = useLocalStorage('os-theme', 'modern');
-    const [osTheme, setOsTheme] = useLocalStorage('os-osTheme', 'dark-pro');
+    const [osTheme, setOsTheme] = useLocalStorage('os-osTheme', 'xp');
     const [desktopBackground, setDesktopBackground] = useLocalStorage('os-desktopBackground', 'dinamic');
     const [screensaver, setScreensaver] = useLocalStorage('os-screensaver', 'enabled');
     const [animation, setAnimation] = useLocalStorage('os-animation', 'enabled');
