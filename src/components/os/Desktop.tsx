@@ -45,8 +45,13 @@ const ORIGINAL_ICON_COLORS: Record<string, string> = {
     music: 'text-blue-500 drop-shadow-md',
 };
 
-function strapiAppToIconData(app: StrapiDesktopApp): AppIconData {
-    const colorClass = app.iconColor || ORIGINAL_ICON_COLORS[app.appId] || 'text-os-text';
+function strapiAppToIconData(app: StrapiDesktopApp, osTheme?: string): AppIconData {
+    let colorClass = app.iconColor || ORIGINAL_ICON_COLORS[app.appId] || 'text-os-text';
+
+    // Excepción para el tema XP: iconos que normalmente son oscuros pasan a ser blancos
+    if (osTheme === 'xp' && colorClass === 'text-os-text') {
+        colorClass = 'text-white';
+    }
 
     return {
         id: app.appId,
@@ -92,11 +97,11 @@ export default function Desktop() {
         setAppsLoading(true);
         getDesktopApps(language).then((strapiApps) => {
             if (cancelled) return;
-            setDesktopApps(strapiApps.map(strapiAppToIconData));
+            setDesktopApps(strapiApps.map(app => strapiAppToIconData(app, osTheme)));
             setAppsLoading(false);
         });
         return () => { cancelled = true; };
-    }, [language]);
+    }, [language, osTheme]);
 
     const translatedIcons = desktopApps;
 
