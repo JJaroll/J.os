@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { Check } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { useIsMobile, useIsTablet } from '@/hooks/useMediaQuery';
 
 interface VideoViewerProps {
     title: string;
@@ -13,6 +14,10 @@ interface VideoViewerProps {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function VideoViewer({ title }: VideoViewerProps) {
     const { t } = useLanguage();
+    const isMobile = useIsMobile();
+    const isTablet = useIsTablet();
+    const isTouchDevice = isMobile || isTablet;
+
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const playerRef = useRef<any>(null);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -20,7 +25,7 @@ export default function VideoViewer({ title }: VideoViewerProps) {
 
     const [playing, setPlaying] = useState(true);
     const [volume, setVolume] = useState(0.8);
-    const [muted, setMuted] = useState(false);
+    const [muted, setMuted] = useState(isTouchDevice);
     const [played, setPlayed] = useState(0);
     const [duration, setDuration] = useState(0);
     const [playbackRate, setPlaybackRate] = useState(1);
@@ -148,10 +153,13 @@ export default function VideoViewer({ title }: VideoViewerProps) {
                     playbackRate={playbackRate}
                     onProgress={handleProgress}
                     onDuration={handleDuration}
+                    playsinline
                     style={{ pointerEvents: 'none' }}
                     config={{
                         youtube: {
                             playerVars: {
+                                autoplay: 1,
+                                mute: isTouchDevice ? 1 : 0,
                                 showinfo: 0,
                                 controls: 0,
                                 rel: 0,
