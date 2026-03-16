@@ -178,6 +178,7 @@ import {
   Github,
   AppWindowMac,
   SquareCheckBig,
+  AppWindow,
   type LucideProps,
 } from 'lucide-react';
 
@@ -189,7 +190,7 @@ const ICON_MAP: Record<string, React.ComponentType<LucideProps>> = {
 
   // System
   Settings, Settings2, Terminal, Monitor, Laptop, Smartphone, Tablet,
-  Cpu, Database, Server, Cloud, CloudUpload, CloudDownload,
+  Cpu, Database, Server, Cloud, CloudUpload, CloudDownload, AppWindow,
 
   // Media
   Music, Music2, Video, Play, Pause, Image, ImageIcon,
