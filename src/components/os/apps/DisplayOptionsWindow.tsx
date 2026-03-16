@@ -225,7 +225,7 @@ export default function DisplayOptionsWindow({ initialTab = 'appearance' }: { in
                                     { id: 'yaru', name: 'Yaru', bg: '#300A24', panel: '#111111', accent: '#E95420' },
                                     { id: 'gruvbox', name: 'Gruvbox', bg: '#282828', panel: '#1D2021', accent: '#FE8019' },
                                     { id: 'synthwave-84', name: 'Synthwave 84', bg: '#1A0B2E', panel: '#11051F', accent: '#FF2A6D' },
-                                    { id: 'xp', name: 'Windows XP', bg: '#004A99', panel: '#0053E1', accent: '#41941A' },
+                                    { id: 'xp', name: 'XP', bg: '#004A99', panel: '#0053E1', accent: '#41941A' },
                                 ].map((t) => {
                                     const isSelected = osTheme === t.id;
                                     return (
