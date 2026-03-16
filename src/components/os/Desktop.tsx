@@ -45,11 +45,11 @@ const ORIGINAL_ICON_COLORS: Record<string, string> = {
     music: 'text-blue-500 drop-shadow-md',
 };
 
-function strapiAppToIconData(app: StrapiDesktopApp, osTheme?: string): AppIconData {
+function strapiAppToIconData(app: StrapiDesktopApp, osTheme?: string, isDesktop?: boolean): AppIconData {
     let colorClass = app.iconColor || ORIGINAL_ICON_COLORS[app.appId] || 'text-os-text';
 
-    // Excepción para el tema XP: iconos que normalmente son oscuros pasan a ser blancos
-    if (osTheme === 'xp' && colorClass === 'text-os-text') {
+    // Excepción para el tema XP en Desktop: iconos que normalmente son oscuros pasan a ser blancos
+    if (isDesktop && osTheme === 'xp' && colorClass === 'text-os-text') {
         colorClass = 'text-white';
     }
 
@@ -92,16 +92,18 @@ export default function Desktop() {
     const [desktopApps, setDesktopApps] = useState<AppIconData[]>([]);
     const [appsLoading, setAppsLoading] = useState(true);
 
+    const isDesktop = !isTablet && !isMobile;
+
     useEffect(() => {
         let cancelled = false;
         setAppsLoading(true);
         getDesktopApps(language).then((strapiApps) => {
             if (cancelled) return;
-            setDesktopApps(strapiApps.map(app => strapiAppToIconData(app, osTheme)));
+            setDesktopApps(strapiApps.map(app => strapiAppToIconData(app, osTheme, isDesktop)));
             setAppsLoading(false);
         });
         return () => { cancelled = true; };
-    }, [language, osTheme]);
+    }, [language, osTheme, isDesktop]);
 
     const translatedIcons = desktopApps;
 
