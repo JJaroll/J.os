@@ -72,7 +72,7 @@
         "error_uncomplete": "Por favor completa todos los campos requeridos.",
         "mail_subject": "Consulta de ",
         "mail_body_source": "Origen: ",
-        "mail_body_message_title": "Mensaje:"
+        "mail_body_message_title": "Mensaje:",
         "contact.success_message": "¡Mensaje enviado! Te responderé pronto."
     },
     "settings": {
