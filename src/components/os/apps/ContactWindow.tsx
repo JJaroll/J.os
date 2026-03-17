@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Send, Loader2, CheckCircle2 } from 'lucide-react';
+import { Send, Loader2, CheckCircle2, XCircle } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function ContactWindow() {
@@ -30,7 +30,7 @@ export default function ContactWindow() {
                     Accept: 'application/json'
                 },
                 body: JSON.stringify({
-                    access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'TU_ACCESS_KEY_DE_WEB3FORMS_AQUI',
+                    access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
                     email: email,
                     source: source || 'No especificado',
                     message: message,
@@ -47,18 +47,15 @@ export default function ContactWindow() {
                 setSource('');
                 setMessage('');
 
-                setTimeout(() => setStatus('idle'), 3000);
+                // Mantenemos el mensaje de éxito por 5 segundos antes de volver a 'idle'
+                setTimeout(() => setStatus('idle'), 5000);
             } else {
-                console.error('Error de Web3Forms:', result);
                 setStatus('error');
-                alert('Hubo un error al enviar el mensaje.');
-                setTimeout(() => setStatus('idle'), 3000);
+                setTimeout(() => setStatus('idle'), 4000);
             }
         } catch (error) {
-            console.error('Error enviando el formulario:', error);
             setStatus('error');
-            alert('Error de conexión al enviar el mensaje.');
-            setTimeout(() => setStatus('idle'), 3000);
+            setTimeout(() => setStatus('idle'), 4000);
         }
     };
 
@@ -68,10 +65,10 @@ export default function ContactWindow() {
         disabled:opacity-50 disabled:cursor-not-allowed`;
 
     return (
-        <div className="flex flex-col w-full h-full bg-os-bg text-os-text font-sans text-sm transition-colors">
+        <div className="flex flex-col w-full h-full bg-os-bg text-os-text font-sans text-sm transition-colors relative">
 
             {/* Barra superior */}
-            <div className="flex items-center px-4 py-3 bg-os-panel border-b border-os-border transition-colors">
+            <div className="flex items-center px-4 py-3 bg-os-panel border-b border-os-border transition-colors z-10">
                 <button
                     onClick={handleSubmit}
                     disabled={status === 'loading' || status === 'success'}
@@ -89,17 +86,31 @@ export default function ContactWindow() {
                 </button>
             </div>
 
+            {/* Mensajes de Estado (Notificaciones de Sistema) */}
+            <div className={`absolute top-[52px] left-0 w-full overflow-hidden transition-all duration-300 z-0 ${status === 'success' || status === 'error' ? 'h-12' : 'h-0'}`}>
+                {status === 'success' && (
+                    <div className="flex items-center justify-center gap-2 w-full h-full bg-green-500/20 text-green-600 border-b border-green-500/30 font-bold text-[12px] animate-in slide-in-from-top">
+                        <CheckCircle2 size={16} />
+                        {t('contact.success_message') || '¡Mensaje enviado! Te responderé pronto.'}
+                    </div>
+                )}
+                {status === 'error' && (
+                    <div className="flex items-center justify-center gap-2 w-full h-full bg-red-500/20 text-red-600 border-b border-red-500/30 font-bold text-[12px] animate-in slide-in-from-top">
+                        <XCircle size={16} />
+                        {t('contact.error_message') || 'Error al enviar. Inténtalo de nuevo.'}
+                    </div>
+                )}
+            </div>
+
             {/* Formulario */}
             <div className="flex-1 overflow-y-auto p-6 md:p-8 bg-os-bg transition-colors">
                 <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-4">
-
-                    {/* Para */}
+                    {/* Campos del formulario (sin cambios) */}
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
                         <label className="w-full sm:w-48 font-bold text-os-text text-[13px]">{t('contact.to')}</label>
                         <div className="flex-1 text-[13px] text-os-text/70 font-medium">hello@jjaroll.dev</div>
                     </div>
 
-                    {/* Correo */}
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
                         <label className="w-full sm:w-48 font-bold text-os-text text-[13px]">
                             {t('contact.your_email')} <span className="text-red-500">*</span>
@@ -115,7 +126,6 @@ export default function ContactWindow() {
                         />
                     </div>
 
-                    {/* ¿Cómo llegaste aquí? */}
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
                         <label className="w-full sm:w-48 font-bold text-os-text text-[13px]">
                             {t('contact.source')}
@@ -130,7 +140,6 @@ export default function ContactWindow() {
                         />
                     </div>
 
-                    {/* Mensaje */}
                     <div className="pt-2">
                         <textarea
                             required
@@ -144,7 +153,6 @@ export default function ContactWindow() {
                             disabled:opacity-50 disabled:cursor-not-allowed`}
                         ></textarea>
                     </div>
-
                 </form>
             </div>
         </div>
