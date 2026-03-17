@@ -112,7 +112,8 @@
         "error_uncomplete": "必須フィールドをすべて入力してください。",
         "mail_subject": "お問い合わせ：",
         "mail_body_source": "ソース：",
-        "mail_body_message_title": "メッセージ："
+        "mail_body_message_title": "メッセージ：",
+        "contact.success_message": "メッセージ送信しました！すぐに返信します。"
     },
     "aiterego": {
         "sidebar_p1": "私の開発は、問題解決のため、あるいは単に楽しみや好奇心から作成されています。",
