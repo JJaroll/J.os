@@ -73,7 +73,9 @@
         "mail_subject": "Consulta de ",
         "mail_body_source": "Origen: ",
         "mail_body_message_title": "Mensaje:",
-        "contact.success_message": "¡Mensaje enviado! Te responderé pronto."
+        "success_message": "¡Mensaje enviado! Te responderé pronto.",
+        "error_message": "Error al enviar. Inténtalo de nuevo.",
+        "error_invalid_email": "Por favor, introduce un correo electrónico válido."
     },
     "settings": {
         "search": "Buscar",

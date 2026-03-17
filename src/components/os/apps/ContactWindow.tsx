@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Send, Loader2, CheckCircle2, XCircle } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ContactWindow() {
     const [email, setEmail] = useState('');
@@ -17,6 +18,15 @@ export default function ContactWindow() {
 
         if (!email || !message) {
             alert(t('contact.error_uncomplete'));
+            return;
+        }
+
+        // Validación de formato de email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setStatus('error');
+            // Usamos un alert temporal o el estado de error
+            alert(t('contact.error_invalid_email'));
             return;
         }
 
@@ -87,19 +97,30 @@ export default function ContactWindow() {
             </div>
 
             {/* Mensajes de Estado (Notificaciones de Sistema) */}
-            <div className={`absolute top-[52px] left-0 w-full overflow-hidden transition-all duration-300 z-0 ${status === 'success' || status === 'error' ? 'h-12' : 'h-0'}`}>
-                {status === 'success' && (
-                    <div className="flex items-center justify-center gap-2 w-full h-full bg-green-500/20 text-green-600 border-b border-green-500/30 font-bold text-[12px] animate-in slide-in-from-top">
-                        <CheckCircle2 size={16} />
-                        {t('contact.success_message') || '¡Mensaje enviado! Te responderé pronto.'}
-                    </div>
-                )}
-                {status === 'error' && (
-                    <div className="flex items-center justify-center gap-2 w-full h-full bg-red-500/20 text-red-600 border-b border-red-500/30 font-bold text-[12px] animate-in slide-in-from-top">
-                        <XCircle size={16} />
-                        {t('contact.error_message') || 'Error al enviar. Inténtalo de nuevo.'}
-                    </div>
-                )}
+            <div className="absolute top-[52px] left-0 w-full overflow-hidden z-20 pointer-events-none">
+                <AnimatePresence mode="wait">
+                    {(status === 'success' || status === 'error') && (
+                        <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 48, opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                            className="w-full flex items-center justify-center"
+                        >
+                            {status === 'success' ? (
+                                <div className="flex items-center justify-center gap-2 w-full h-full bg-green-500/20 text-green-600 border-b border-green-500/30 font-bold text-[12px]">
+                                    <CheckCircle2 size={16} />
+                                    {t('contact.success_message')}
+                                </div>
+                            ) : (
+                                <div className="flex items-center justify-center gap-2 w-full h-full bg-red-500/20 text-red-600 border-b border-red-500/30 font-bold text-[12px]">
+                                    <XCircle size={16} />
+                                    {t('contact.error_message')}
+                                </div>
+                            )}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
 
             {/* Formulario */}

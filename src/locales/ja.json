@@ -113,7 +113,9 @@
         "mail_subject": "お問い合わせ：",
         "mail_body_source": "ソース：",
         "mail_body_message_title": "メッセージ：",
-        "contact.success_message": "メッセージ送信しました！すぐに返信します。"
+        "success_message": "メッセージ送信しました！すぐに返信します。",
+        "error_message": "送信エラーが発生しました。もう一度お試しください。",
+        "error_invalid_email": "有効なメールアドレスを入力してください。"
     },
     "aiterego": {
         "sidebar_p1": "私の開発は、問題解決のため、あるいは単に楽しみや好奇心から作成されています。",

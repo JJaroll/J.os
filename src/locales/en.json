@@ -73,7 +73,9 @@
         "mail_subject": "Inquiry from ",
         "mail_body_source": "Source: ",
         "mail_body_message_title": "Message:",
-        "contact.success_message": "Message sent! I'll get back to you soon."
+        "success_message": "Message sent! I'll get back to you soon.",
+        "error_message": "Error sending message. Please try again.",
+        "error_invalid_email": "Please enter a valid email address."
     },
     "settings": {
         "search": "Search",
