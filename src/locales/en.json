@@ -72,7 +72,8 @@
         "error_uncomplete": "Please complete all required fields.",
         "mail_subject": "Inquiry from ",
         "mail_body_source": "Source: ",
-        "mail_body_message_title": "Message:"
+        "mail_body_message_title": "Message:",
+        "contact.success_message": "Message sent! I'll get back to you soon."
     },
     "settings": {
         "search": "Search",
