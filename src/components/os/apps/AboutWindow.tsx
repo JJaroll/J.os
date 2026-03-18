@@ -218,7 +218,7 @@ Decidí crear J.OS porque quería un proyecto que me obligara a resolver problem
           <a href="#" onClick={handleOpenWhyOS} className="text-os-panel-text/80 hover:text-os-accent underline text-[14px] text-center leading-relaxed transition-colors" dangerouslySetInnerHTML={{ __html: t('about.why_os') }}>
           </a>
 
-          <a href="https://github.com/JJaroll/jos" className="text-os-panel-text/70 hover:text-os-accent underline text-sm transition-colors">
+          <a href="https://github.com/JJaroll/J.os" className="text-os-panel-text/70 hover:text-os-accent underline text-sm transition-colors">
             {t('about.source_code')}
           </a>
         </div>
